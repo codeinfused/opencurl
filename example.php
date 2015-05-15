@@ -1,4 +1,6 @@
 <?php
+require("opencurl/crypt.php") 			// optional encryption class
+require("opencurl/simple_html_dom.php"	// recommended html traversal
 require("opencurl/opencurl.php");
 
 // INIT OPENCURL

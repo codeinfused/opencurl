@@ -30,9 +30,6 @@ echo $curl->newurl;
 echo $curl->html;
 */
 
-require("simple_html_dom.php");
-require("crypt.php");
-
 class Curl{
 
 	public $html;
