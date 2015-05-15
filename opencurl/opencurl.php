@@ -1,33 +1,33 @@
 <?php
 /*
-	openCURL
-	v0.1
-	Author: Mike Smotherman (@codeinfused)
-	Github Repo:
-	
-	TO USE PASSWORD ENCRYPTION
-	edit line 9 of crypt.php and create your own salt key
+openCURL
+@version v0.1
+@author Mike Smotherman (@codeinfused)
+@github https://github.com/codeinfused/opencurl
 
-	----------------------------
-	EXAMPLE:
+TO USE PASSWORD ENCRYPTION
+edit line 9 of crypt.php and create your own salt key
+
+----------------------------
+EXAMPLE:
+
+$curl = new Curl(array(
+	"cookieFile" => "codeinfused",				// optional, defaults to md5 hash
+	"defaultRefer" => "http://www.google.com"	// optional
+));
+
+$curl->post(array(
+	"url" => "...",
+	"data" => array(),  	// optional
+	"hasFile" => false,  	// optional
+	"showHeaders" => true, 	// optional
+	"fresh" => false,  		// optional
+	"autofollow" => true,	// optional
+	"headers" => array()	// optional
+));
 	
-	$curl = new Curl(array(
-		"cookieFile" => "codeinfused",				// optional, defaults to md5 hash
-		"defaultRefer" => "http://www.google.com"	// optional
-	));
-	
-	$curl->post(array(
-		"url" => "...",
-		"data" => array(),  	// optional
-		"hasFile" => false,  	// optional
-		"showHeaders" => true, 	// optional
-		"fresh" => false,  		// optional
-		"autofollow" => true,	// optional
-		"headers" => array()	// optional
-	));
-		
-	echo $curl->newurl;
-	echo $curl->html;
+echo $curl->newurl;
+echo $curl->html;
 */
 
 require("simple_html_dom.php");
